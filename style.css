@@ -1,0 +1,146 @@
+/* General */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #222;
+}
+
+header {
+    margin:50px;
+  padding: 10px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
+}
+#background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  /* Ensures the video covers the full area */
+  z-index: -1;         /* Places it behind all content */
+}
+
+
+
+h1 { font-size: 1.8rem; margin-bottom: 10px; }
+.container { max-width: 1100px; margin: auto; padding: 20px; text-align: center;
+}
+.hidden { display: none; }
+
+/* Welcome screen */
+.welcome-screen {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+}
+
+.welcome-screen h1 {
+  font-size: 2.5rem;
+  transition: transform 0.3s;
+}
+
+.welcome-screen h1:hover {
+  transform: scale(1.1);
+}
+h2,p.container{
+    color:white;
+}
+/* Cards */
+.flex {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: rgb(217, 215, 215);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  flex: 1 1 250px;
+  cursor: pointer;
+  transition: transform 0.2s ease, border 0.3s ease;
+  text-align: center;
+  border: 2px solid transparent;
+}
+
+.card:hover { transform: translateY(-5px); }
+.card img { max-width: 100%; border-radius: 8px; }
+.card.selected { border: 2px solid #007bff; background: #e9f2ff; }
+
+/* Tags */
+.tag {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  margin-top: 5px;
+  color: white;
+}
+.easy { background: green; }
+.medium { background: orange; }
+.hard { background: red; }
+.chill { background: blue; }
+
+/* Road Signs */
+.road-signs, .badges {
+      margin-top: 40px;
+      text-align: center;
+}
+.sign img { 
+    width: 60px;
+    height: 60px;
+    border-radius: 60%;
+    border: 2px solid rgb(217, 215, 215); 
+}
+.sign {
+      display: inline-block;
+      text-align: center;
+      margin: 10px;
+      color:rgb(217, 215, 215);
+    }
+
+/* Badges */
+.badge {
+      display: inline-block;
+      padding: 10px;
+      border-radius: 10px;
+      background: rgb(217, 215, 215);
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      margin: 10px;
+      transition: background 0.3s ease;
+    }
+
+/* Confirmation */
+.confirmation-box {
+  display: none;
+  margin-top: 30px;
+  padding: 20px;
+  background: white;
+  border: 2px solid #007bff;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.btn {
+  margin-top: 15px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  background: #007bff;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.btn:hover { background: #0056b3; }
+.hidden { display:none; }
